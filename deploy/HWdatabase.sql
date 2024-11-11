@@ -1,7 +1,10 @@
+-- Create the database
 CREATE DATABASE grading_tool;
 
+-- Use the database
 USE grading_tool;
 
+-- Create the students table
 CREATE TABLE students (
     studentID INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
