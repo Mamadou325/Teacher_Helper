@@ -11,11 +11,8 @@
         <select name = "studentID" id = "studentID">
 
             <?php
-            // Include the db_connect.php file to access the getDatabaseConnection function
-            include('db_connect.php');
-
-            // Connect to the database using the function
-            $dbc = getDatabaseConnection();
+            // Connect to the database and fetch students
+            $dbc = mysqli_connect("localhost", "csc350", "xampp", "grading_tool");
 
             // Check the connection
             if (!$dbc) {
